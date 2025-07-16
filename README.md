@@ -26,30 +26,38 @@ python main.py train --model cnn --epochs 20 --use_specaugment
 ```
 Other models:
 `--model rnn_raw`
+
 `--model rnn_mel`
 
 2. Evaluate a Model
+   
 ```
 python main.py eval --model cnn --weights cnn_weights.pt
 ```
 
-4. Serve REST API
+3. Serve REST API
 ```
 python main.py serve --model cnn --weights cnn_weights.pt
 ```
 
 API will be available at:
+
 http://localhost:8000/predict
 
 ### Data
 Dataset can be found [here](https://urbansounddataset.weebly.com/urbansound8k.html)
+
 UrbanSound8K data should be structured as:
 
 /data/urbansound8k/
-    data/
-    train_part.csv
-    val_part.csv
 
-Model Weights
+    data/
+    
+    train_part.csv
+    
+    val_part.csv
+    
+
+### Model Weights
 
 After training, model weights are saved (e.g., `cnn_weights.pt`) and can be used for prediction or evaluation
