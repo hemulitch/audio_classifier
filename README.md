@@ -25,6 +25,7 @@ pip install -r requirements.txt
 python main.py train --model cnn --epochs 20 --use_specaugment
 ```
 Other models:
+
 `--model rnn_raw`
 
 `--model rnn_mel`
@@ -49,14 +50,12 @@ Dataset can be found [here](https://urbansounddataset.weebly.com/urbansound8k.ht
 
 UrbanSound8K data should be structured as:
 
+```
 /data/urbansound8k/
-
-    data/
-    
-    train_part.csv
-    
-    val_part.csv
-    
+                  data/
+                  train_part.csv
+                  val_part.csv
+```
 
 ### Model Weights
 
